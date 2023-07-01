@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useItemById } from "../data/api";
+import { useItemById } from "../data/GetItems";
 
 export function Item() {
   const { id } = useParams();

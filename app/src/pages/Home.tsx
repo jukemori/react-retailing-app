@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useItems } from "../data/api";
+import { useItems } from "../data/GetItems";
 import { Tabs } from "../components/Tabs";
 
 export function Home() {
