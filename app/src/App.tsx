@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Store } from "./pages/Store";
-import { About } from "./pages/About";
+import { Item } from "./pages/Item";
+import { Category } from "./pages/Category";
 import { Tabs } from "./components/Tabs";
 // import "./App.css";
 
@@ -12,8 +12,8 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/store" element={<Store />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/category/:id" element={<Category />} />
+          <Route path="/item/:id" element={<Item />} />
         </Routes>
       </div>
     </>
