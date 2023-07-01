@@ -1,3 +1,10 @@
+import { Tabs } from "../components/Tabs";
+
 export function Category() {
-  return <h1>Category</h1>;
+  return (
+    <>
+      <Tabs />
+      <h1>category</h1>
+    </>
+  );
 }

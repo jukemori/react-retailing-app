@@ -1,19 +1,24 @@
 import { NavLink } from "react-router-dom";
+import { useCategories } from "../data/api";
 import "./Tabs.css";
 
 export function Tabs() {
+  const categories = useCategories();
   return (
     <div className="tabs">
       <div className="tab-container">
         <NavLink to="/" className="tab">
-          Home
+          すべて
         </NavLink>
-        <NavLink to="/store" className="tab">
-          Store
-        </NavLink>
-        <NavLink to="/about" className="tab">
-          About
-        </NavLink>
+        {categories.map((category) => (
+          <NavLink
+            to={`/category/${category.id}`}
+            className="tab"
+            key={category.id}
+          >
+            {category.name}
+          </NavLink>
+        ))}
       </div>
     </div>
   );

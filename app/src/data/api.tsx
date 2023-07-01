@@ -30,7 +30,7 @@ export const useItemById = (id: number) => {
 };
 
 export const useCategories = () => {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState<any[]>([]);
 
   useEffect(() => {
     axios

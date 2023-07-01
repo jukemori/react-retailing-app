@@ -1,15 +1,19 @@
+import { Link } from "react-router-dom";
 import { useItems } from "../data/api";
+import { Tabs } from "../components/Tabs";
 
 export function Home() {
   const items = useItems();
   return (
-    <div>
+    <>
+      <Tabs />
       {items.map((item) => (
         <div key={item.id}>
-          <h2>{item.name}</h2>
-          <img src={item.image} alt={item.name} />
+          <Link to={`/item/${item.id}`}>
+            <img src={item.image} alt={item.name} />
+          </Link>
         </div>
       ))}
-    </div>
+    </>
   );
 }
