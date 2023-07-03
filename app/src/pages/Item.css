@@ -1,0 +1,51 @@
+.item-container {
+  margin-top: 2rem;
+ display: flex;
+ justify-content: center;
+}
+
+.item {
+  max-width: 1208px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.item-pic {
+  padding: 1rem;
+}
+.item-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-likes-comments {
+  display: flex;
+}
+
+.item-likes, .item-comments {
+  display: flex;
+}
+
+
+
+.like-box, .comment-box {
+  background-color: #DCDCDC;
+  border-radius: 9999px;
+  padding: 0.3rem 0.6rem;
+}
+
+.like-count, .comment-count {
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+
+.item-flag {
+  padding-top: 1rem;
+}
+
+.item-flag svg{
+  background-color: #DCDCDC;
+  border-radius: 50%;
+  padding: 0.5rem
+}
