@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Cards.css";
-import { Heart } from "./Icons";
+import { Heart, Camera } from "./Icons";
 
 interface Item {
   id: number;
@@ -46,6 +46,10 @@ export function Cards({ items }: { items: Item[] }) {
             </div>
           ))}
         </div>
+      </div>
+      <div className="list-item">
+        <p>出品</p>
+        <Camera />
       </div>
     </>
   );

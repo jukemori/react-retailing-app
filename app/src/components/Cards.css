@@ -17,6 +17,11 @@
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   position: relative;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  filter: brightness(85%);
 }
 
 .sold-color {
@@ -74,7 +79,31 @@ img {
   font-size: 1.1rem;
   color: black;
 }
+ .list-item {
+  background-color: #FF0211;
+  font-size: 2.3rem;
+  text-align: center;
+  color: white;
+  width: 60px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: fixed;
+  right: -0.7rem;
+  bottom: -0.7rem;
+  display: none;
+  transition: 0.3s ease;
+ }
 
+ .list-item p {
+  color: white;
+  font-size: 0.6rem;
+  margin: 0;
+ }
+
+ .list-item:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+ }
 
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -87,10 +116,16 @@ img {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .list-item {
+    display: block;
+  }
 }
 
 @media all and (max-width: 480px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+  }
+  .list-item {
+    display: block;
   }
 }

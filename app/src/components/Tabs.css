@@ -22,15 +22,15 @@ ul li a{
 
 ul li {
   padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
 }
 
-ul li a:hover{
-
-  color: var(--red-text-color);
+ul li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
+
 
 .active{
-
   color: var(--red-text-color);
 }
 
@@ -39,7 +39,7 @@ ul li a:hover{
   ul {
     overflow-x: scroll;
     overflow-y: hidden;
-  white-space: nowrap;
+    white-space: nowrap;
 
   }
   ::-webkit-scrollbar {

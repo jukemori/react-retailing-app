@@ -108,6 +108,12 @@
   font-size: 0.8rem;
   background-color: #FF0211;
   border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.purchase-box h3:hover {
+  filter: brightness(85%);
+  cursor: pointer;
 }
 
 @media all and (max-width: 768px) {
@@ -125,16 +131,14 @@
     padding-top: 0;
   }
 
-  .item-info p {
-    font-size: 0.8rem;
-  }
 
-  .item-icons {
-    font-size: 0.8rem;
+
+  .item-icons p {
+    font-size: 0.9rem;
   }
 
   .item-flag {
-    padding-top: 0.8rem;
+    padding-top: 0.9rem;
   }
   .item-title {
     font-size: 1rem;
