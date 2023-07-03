@@ -1,0 +1,55 @@
+.container {
+ display: flex;
+ justify-content: center;
+}
+
+.cards {
+  max-width: 1208px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+
+}
+
+.card {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+
+}
+
+
+
+.card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card p {
+  font-size: 1rem;
+  opacity: .7;
+  margin: 0;
+}
+
+
+ .card-infos {
+  padding: 0.4rem;
+}
+
+.card-details {
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-details .card-price {
+  font-size: bold;
+}

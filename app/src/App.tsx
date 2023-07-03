@@ -3,6 +3,7 @@ import { Home } from "./pages/Home";
 import { Item } from "./pages/Item";
 import { Category } from "./pages/Category";
 import { Search } from "./components/Search";
+import "./App.css";
 // import { Navbar } from "./components/Navbar";
 import { SearchResults } from "./pages/SearchResults";
 

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faMessage } from "@fortawesome/free-solid-svg-icons";
 import { faFlag } from "@fortawesome/free-solid-svg-icons";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -13,26 +13,26 @@ export function MenuBars() {
   return <FontAwesomeIcon icon={faBars} />;
 }
 export function Bell() {
-  <FontAwesomeIcon icon={faBell} />;
+  return <FontAwesomeIcon icon={faBell} />;
 }
 export function Check() {
-  <FontAwesomeIcon icon={faCheck} />;
+  return <FontAwesomeIcon icon={faCheck} />;
 }
 export function Heart() {
-  <FontAwesomeIcon icon={faHeart} />;
+  return <FontAwesomeIcon icon={faHeart} />;
 }
 export function Message() {
-  <FontAwesomeIcon icon={faMessage} />;
+  return <FontAwesomeIcon icon={faMessage} />;
 }
 export function Flag() {
-  <FontAwesomeIcon icon={faFlag} />;
+  return <FontAwesomeIcon icon={faFlag} />;
 }
 export function Left() {
-  <FontAwesomeIcon icon={faChevronLeft} />;
+  return <FontAwesomeIcon icon={faChevronLeft} />;
 }
 export function MagnifyingGlass() {
-  <FontAwesomeIcon icon={faMagnifyingGlass} />;
+  return <FontAwesomeIcon icon={faMagnifyingGlass} />;
 }
 export function Download() {
-  <FontAwesomeIcon icon={faArrowUpFromBracket} />;
+  return <FontAwesomeIcon icon={faArrowUpFromBracket} />;
 }
