@@ -1,13 +1,12 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 #root {
-
-  margin: 0 auto;
-
-
+  --main-text-color: black;
+  --secondary-text-color: #6c757d;
+  --red-text-color: #ff5266;
 }
 
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }

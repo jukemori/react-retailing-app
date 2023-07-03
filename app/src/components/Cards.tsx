@@ -14,7 +14,7 @@ interface Item {
 export function Cards({ items }: { items: Item[] }) {
   return (
     <>
-      <div className="container">
+      <div className="cards-container">
         <div className="cards">
           {items.map((item) => (
             <div key={item.id} className="card">
@@ -29,11 +29,19 @@ export function Cards({ items }: { items: Item[] }) {
                       ¥{item.price.toLocaleString("en-US")}
                     </p>
 
-                    <p>
-                      <Heart /> {item.like_count}
-                    </p>
+                    {item.like_count > 0 && (
+                      <p>
+                        <Heart /> {item.like_count}
+                      </p>
+                    )}
                   </div>
                 </div>
+                {item.is_sold_out && (
+                  <>
+                    <div className="sold-color"></div>
+                    <div className="sold-text">SOLD</div>
+                  </>
+                )}
               </Link>
             </div>
           ))}

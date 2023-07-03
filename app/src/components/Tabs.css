@@ -1,22 +1,51 @@
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--secondary-text-color);
+  height: 2rem;
+ }
+
 ul {
+  width: 1208px;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  padding-left: 0;
+  margin: 0;
 }
 ul li a{
   text-decoration: none;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: bold;
+  color: var(--secondary-text-color);
+
+  font-size: 1rem;
+
+}
+
+ul li {
+  padding: 0.5rem 1rem;
 }
 
 ul li a:hover{
-  background-color: red;
-  color: #fff;
+
+  color: var(--red-text-color);
 }
 
 .active{
-  background-color: red;
-  color: #fff;
+
+  color: var(--red-text-color);
 }
+
+
+@media all and (max-width: 1024px) {
+  ul {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  white-space: nowrap;
+
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  li{
+    display: inline-block;
+  }
+ }

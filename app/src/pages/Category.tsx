@@ -14,7 +14,11 @@ export function Category() {
   return (
     <>
       <Tabs />
-      <Cards items={filteredItems} />
+      {filteredItems.length > 0 ? (
+        <Cards items={filteredItems} />
+      ) : (
+        <p>No items found in this category.</p>
+      )}
     </>
   );
 }
