@@ -16,8 +16,14 @@ export function SearchResults() {
   return (
     <>
       <Tabs />
-      <h2>Search Results for: {keyword}</h2>
-      <Cards items={filteredItems} />
+      {filteredItems.length > 0 ? (
+        <>
+          <h2>Search Results for: {keyword}</h2>
+          <Cards items={filteredItems} />
+        </>
+      ) : (
+        <p>No items found from this search.</p>
+      )}
     </>
   );
 }

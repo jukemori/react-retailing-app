@@ -1,7 +1,7 @@
 .item-container {
   margin-top: 2rem;
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .item {
@@ -13,10 +13,16 @@
 
 .item-pic {
   padding: 1rem;
+  width: 37rem;
+}
+
+.item-info {
+  padding: 1rem;
 }
 .item-icons {
   display: flex;
   justify-content: space-between;
+  color: var(--secondary-text-color);
 }
 
 .item-likes-comments {
@@ -25,6 +31,7 @@
 
 .item-likes, .item-comments {
   display: flex;
+  margin: 0 1rem;
 }
 
 
@@ -33,19 +40,115 @@
   background-color: #DCDCDC;
   border-radius: 9999px;
   padding: 0.3rem 0.6rem;
+  margin-right: 0.3rem;
+  color: var(--secondary-text-color);
 }
 
 .like-count, .comment-count {
   font-weight: bold;
   padding-top: 0.5rem;
+  color: var(--secondary-text-color);
 }
 
 .item-flag {
   padding-top: 1rem;
+  margin-right: 1rem;
 }
 
 .item-flag svg{
   background-color: #DCDCDC;
   border-radius: 50%;
   padding: 0.5rem
+}
+
+.description-title {
+  background-color: #DCDCDC;
+  padding: 2rem 1rem 0.5rem 1rem;
+  margin: 0;
+  color: var(--secondary-text-color);
+}
+
+.description-content {
+  padding: 1rem;
+  margin: 0;
+}
+
+.purchase-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3D2B1F;
+  color: white;
+  margin-top: 2rem;
+}
+
+.item-price {
+  display: flex;
+  padding: 0.8rem 0.5rem;
+}
+
+.purchase-box h2, .purchase-box h3, .purchase-box p {
+  margin: 0;
+}
+
+.item-price h2 {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+  font-weight: lighter;
+}
+.item-price p {
+  font-size: 0.7rem;
+  padding-top: 0.7em;
+  color: white;
+}
+
+.purchase-box h3 {
+  padding: 0.9rem 0.5rem 0;
+  margin: 0.2rem 0.2rem;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  background-color: #FF0211;
+  border-radius: 4px;
+}
+
+@media all and (max-width: 768px) {
+  .item {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .item-pic {
+    width: 95vw;
+    padding-bottom: 0;
+  }
+
+  .item-info {
+    padding-top: 0;
+  }
+
+  .item-info p {
+    font-size: 0.8rem;
+  }
+
+  .item-icons {
+    font-size: 0.8rem;
+  }
+
+  .item-flag {
+    padding-top: 0.8rem;
+  }
+  .item-title {
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 0.1rem 1rem;
+    margin-top: 0;
+  }
+
+  .purchase-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+
 }

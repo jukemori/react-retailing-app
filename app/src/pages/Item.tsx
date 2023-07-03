@@ -41,10 +41,15 @@ export function Item() {
             </div>
             <div className="item-desctiption">
               <p className="description-title">商品の説明</p>
-              <p>{item.description}</p>
+              <p className="description-content">{item.description}</p>
             </div>
-            <p>{item.price} yen</p>
-            <p>shipping fee: {item.shipping_fee}</p>
+            <div className="purchase-box">
+              <div className="item-price">
+                <h2>¥{item.price.toLocaleString("en-US")}</h2>
+                <p>{item.shipping_fee}</p>
+              </div>
+              <h3>購入手続きへ</h3>
+            </div>
           </div>
         </div>
       </div>
