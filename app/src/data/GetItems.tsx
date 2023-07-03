@@ -3,7 +3,7 @@ import axios from "axios";
 
 const base_url = "http://localhost:8000";
 
-export const useItems = () => {
+export function useItems() {
   const [items, setItems] = useState<any[]>([]);
 
   useEffect(() => {
@@ -14,9 +14,9 @@ export const useItems = () => {
   }, []);
 
   return items;
-};
+}
 
-export const useItemById = (id: number) => {
+export function useItemById(id: number) {
   const [item, setItem] = useState(null);
 
   useEffect(() => {
@@ -27,4 +27,4 @@ export const useItemById = (id: number) => {
   }, [id]);
 
   return item;
-};
+}

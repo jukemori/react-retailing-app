@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const base_url = "http://localhost:8000";
-export const useCategories = () => {
+export function useCategories() {
   const [categories, setCategories] = useState<any[]>([]);
 
   useEffect(() => {
@@ -13,4 +13,4 @@ export const useCategories = () => {
   }, []);
 
   return categories;
-};
+}
