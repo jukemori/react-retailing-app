@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-// import { ReactComponent as Hamburger } from "../../assets/icons/hamburger.svg";
-// import { ReactComponent as Brand } from "../../assets/icons/logo.svg";
 import "./Navbar.css";
+import { Search } from "./Search";
+import { MenuBars, Bell, Check } from "./Icons";
 
 export function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -13,29 +13,33 @@ export function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="container">
-        <div className="logo">{/* <Brand /> */}</div>
+      <div className="nav-container">
         <div className="menu-icon" onClick={handleShowNavbar}>
-          ⚽️
+          <MenuBars />
         </div>
+        <Search />
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="">Blog</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="">Projects</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="">About</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="">Contact</NavLink>
             </li>
           </ul>
+        </div>
+        <div className="nav-icons">
+          <Bell />
+          <Check />
         </div>
       </div>
     </nav>

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-regular-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
