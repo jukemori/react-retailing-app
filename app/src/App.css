@@ -4,11 +4,12 @@
   --main-text-color: #202124;
   --secondary-text-color: #6c757d;
   --red-text-color: #ff5266;
+  position: relative;
 }
 
-
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 p {
