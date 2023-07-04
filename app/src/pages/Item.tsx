@@ -1,6 +1,13 @@
 import { useParams } from "react-router-dom";
 import { useItemById } from "../data/GetItems";
-import { Heart, Message, Flag } from "../components/Icons";
+import {
+  Heart,
+  Message,
+  Flag,
+  MagnifyingGlass,
+  Left,
+  Download,
+} from "../components/Icons";
 import "./Item.css";
 
 export function Item() {
@@ -13,6 +20,19 @@ export function Item() {
 
   return (
     <>
+      <nav className="navbar">
+        <div className="nav-container">
+          <div className="return">
+            <Left />
+          </div>
+
+          <div className="nav-title">{/* <h1>{item.name}</h1> */}</div>
+          <div className="nav-icons">
+            <MagnifyingGlass />
+            <Download />
+          </div>
+        </div>
+      </nav>
       <div className="item-container">
         <div className="item">
           <div className="item-pic">
