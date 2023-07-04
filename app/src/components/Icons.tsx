@@ -9,6 +9,7 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export function MenuBars() {
   return <FontAwesomeIcon icon={faBars} />;
@@ -40,4 +41,7 @@ export function Download() {
 
 export function Camera() {
   return <FontAwesomeIcon icon={faCamera} />;
+}
+export function Xmark() {
+  return <FontAwesomeIcon icon={faXmark} />;
 }

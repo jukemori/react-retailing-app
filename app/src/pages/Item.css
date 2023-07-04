@@ -1,3 +1,41 @@
+
+.nav-title.hidden, .nav-search, .nav-search-container  {
+  display: none;
+}
+
+.nav-search-container.visible{
+  display: flex;
+}
+
+.nav-search.visible, .nav-title {
+  display: block;
+  animation: slideIn .7s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.nav-search .fa-xmark {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  padding: 0.5rem;
+}
+
+
+
+
+.return {
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+}
+
+
 .item-container {
   margin-top: 2rem;
   display: flex;
@@ -33,7 +71,6 @@
   display: flex;
   margin: 0 1rem;
 }
-
 
 
 .like-box, .comment-box {
@@ -153,6 +190,10 @@
     left: 0;
     width: 100%;
     margin-top: 0;
+  }
+
+  .nav-title h1{
+    font-size: 1.2rem;
   }
 
 }

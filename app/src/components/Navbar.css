@@ -33,6 +33,7 @@
 
 
 .nav-icons {
+  display: flex;
   color: var(--secondary-text-color);
   font-size: 1.3rem;
 }

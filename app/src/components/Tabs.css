@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--secondary-text-color);
-  height: 2rem;
+  height: 40px;
  }
 
 ul {
