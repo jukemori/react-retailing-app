@@ -19,9 +19,6 @@
   border-bottom: 1px solid var(--secondary-text-color);
 }
 
-
-
-
 .menu-icon {
   display: none;
   color: var(--secondary-text-color);
@@ -32,13 +29,10 @@
   display: none;
 }
 
-
 .nav-elements ul a.active {
   color: var(--secondary-text-color);
   text-decoration: none;
-
 }
-
 
 .nav-icons {
   display: flex;
@@ -47,9 +41,9 @@
 }
 
 .nav-icons svg {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   transition: background-color 0.3s ease;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .nav-icons svg:hover {
@@ -57,25 +51,27 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-
-.nav-title.hidden, .nav-search, .nav-search-container  {
+.nav-title.hidden,
+.nav-search,
+.nav-search-container {
   display: none;
 }
 
-.nav-search-container.visible{
+.nav-search-container.visible {
   display: flex;
 }
 
-.nav-search.visible, .nav-title {
+.nav-search.visible,
+.nav-title {
   display: block;
-  animation: appear .7s ease;
+  animation: appear 0.7s ease;
 }
 
 @keyframes appear {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -85,7 +81,7 @@
   color: var(--secondary-text-color);
   padding: 0.5rem;
   transition: background-color 0.3s ease;
-  border-radius: .5rem ;
+  border-radius: 0.5rem;
 }
 
 .nav-search .fa-xmark:hover {
@@ -93,22 +89,17 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-
-
-
 .return {
   font-size: 1.3rem;
   color: var(--secondary-text-color);
   transition: background-color 0.3s ease;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .return:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.05);
 }
-
-
 
 @media (max-width: 600px) {
   .menu-icon {
@@ -117,12 +108,11 @@
   }
 
   .nav-elements {
-
     position: absolute;
     left: 0;
     top: 60px;
     background-color: white;
-    width: 0px;
+    width: 0;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
@@ -140,6 +130,6 @@
   }
 
   .nav-elements ul li {
-    margin-top: .6rem;
+    margin-top: 0.6rem;
   }
 }

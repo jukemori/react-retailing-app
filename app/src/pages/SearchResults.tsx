@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useItems } from "../data/GetItems";
 import { ItemNavbar } from "../components/navbar/ItemNavbar";
 import { Cards } from "../components/cards/Cards";
-import "../components/Results.css";
+import "../components/Containers.css";
 
 export function SearchResults() {
   const location = useLocation();
@@ -24,7 +24,6 @@ export function SearchResults() {
               <h2>Search Results for: {keyword}</h2>
             </div>
           </div>
-
           <Cards items={filteredItems} />
         </>
       ) : (

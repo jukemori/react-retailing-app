@@ -1,6 +1,3 @@
-
-
-
 .item-container {
   margin-top: 100px;
   display: flex;
@@ -22,6 +19,7 @@
 .item-info {
   padding: 1rem;
 }
+
 .item-icons {
   display: flex;
   justify-content: space-between;
@@ -32,13 +30,14 @@
   display: flex;
 }
 
-.item-likes, .item-comments {
+.item-likes,
+.item-comments {
   display: flex;
   margin: 0 1rem;
 }
 
-
-.like-box, .comment-box {
+.like-box,
+.comment-box {
   background-color: #ededed;
   border-radius: 9999px;
   padding: 0.3rem 0.6rem;
@@ -46,7 +45,8 @@
   color: var(--secondary-text-color);
 }
 
-.like-count, .comment-count {
+.like-count,
+.comment-count {
   font-weight: bold;
   padding-top: 0.5rem;
   color: var(--secondary-text-color);
@@ -57,10 +57,10 @@
   margin-right: 1rem;
 }
 
-.item-flag svg{
+.item-flag svg {
   background-color: #ededed;
   border-radius: 50%;
-  padding: 0.5rem
+  padding: 0.5rem;
 }
 
 .description-title {
@@ -88,7 +88,9 @@
   padding: 0.8rem 0.5rem;
 }
 
-.purchase-box h2, .purchase-box h3, .purchase-box p {
+.purchase-box h2,
+.purchase-box h3,
+.purchase-box p {
   margin: 0;
 }
 
@@ -97,6 +99,7 @@
   margin-right: 0.3rem;
   font-weight: lighter;
 }
+
 .item-price p {
   font-size: 0.7rem;
   padding-top: 0.7em;
@@ -133,8 +136,6 @@
     padding-top: 0;
   }
 
-
-
   .item-icons p {
     font-size: 0.9rem;
   }
@@ -142,6 +143,7 @@
   .item-flag {
     padding-top: 0.9rem;
   }
+
   .item-title {
     font-size: 1rem;
     font-weight: lighter;
@@ -157,8 +159,7 @@
     margin-top: 0;
   }
 
-  .nav-title h1{
+  .nav-title h1 {
     font-size: 1.2rem;
   }
-
 }

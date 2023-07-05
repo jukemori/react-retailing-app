@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useItems } from "../data/GetItems";
 import { Cards } from "../components/cards/Cards";
-import "../components/Results.css";
+import "../components/Containers.css";
+
+import "../components/Containers.css";
 
 export function Category() {
   const { id } = useParams();
@@ -13,7 +15,9 @@ export function Category() {
   return (
     <>
       {filteredItems.length > 0 ? (
-        <Cards items={filteredItems} />
+        <div className="index-container">
+          <Cards items={filteredItems} />
+        </div>
       ) : (
         <div className="category-results-container">
           <div className="results">

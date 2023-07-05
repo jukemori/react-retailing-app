@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--secondary-text-color);
- }
+}
 
- .tabs {
+.tabs {
   margin-top: 60px;
   height: 40px;
   background-color: white;
@@ -13,7 +13,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
- }
+}
 
 ul {
   width: 1208px;
@@ -22,12 +22,11 @@ ul {
   padding-left: 0;
   margin: 0;
 }
-ul li a{
+
+ul li a {
   text-decoration: none;
   color: var(--secondary-text-color);
-
   font-size: 1rem;
-
 }
 
 ul li {
@@ -39,23 +38,22 @@ ul li:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-
-.active{
+.active {
   color: var(--red-text-color);
 }
-
 
 @media all and (max-width: 1024px) {
   ul {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-
   }
+
   ::-webkit-scrollbar {
     display: none;
   }
-  li{
+
+  li {
     display: inline-block;
   }
- }
+}
