@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Cards.css";
-import { Heart, Camera } from "./Icons";
+import { Heart, Camera } from "../Icons";
 
 interface Item {
   id: number;

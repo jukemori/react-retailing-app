@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
-
 import { useItems } from "../data/GetItems";
-import { Tabs } from "../components/Tabs";
-import { Cards } from "../components/Cards";
+import { Cards } from "../components/cards/Cards";
+import "../components/Results.css";
 
 export function Category() {
   const { id } = useParams();
@@ -13,11 +12,14 @@ export function Category() {
 
   return (
     <>
-      <Tabs />
       {filteredItems.length > 0 ? (
         <Cards items={filteredItems} />
       ) : (
-        <p>No items found in this category.</p>
+        <div className="category-results-container">
+          <div className="results">
+            <h2>No items found in this category.</h2>
+          </div>
+        </div>
       )}
     </>
   );

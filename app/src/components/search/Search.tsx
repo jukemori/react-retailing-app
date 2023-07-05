@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useItems } from "../data/GetItems";
-import { MagnifyingGlass } from "./Icons";
+import { useItems } from "../../data/GetItems";
+import { MagnifyingGlass } from "../Icons";
 import "./Search.css";
 
 export function Search() {
@@ -65,6 +65,14 @@ export function Search() {
                     {item.name}
                   </div>
                 ))}
+              {value &&
+                !items.some((item) =>
+                  item.name.toLowerCase().startsWith(value.toLowerCase())
+                ) && (
+                  <div onClick={() => onSearch(value)} className="search-item">
+                    {value}
+                  </div>
+                )}
             </div>
           )}
       </div>

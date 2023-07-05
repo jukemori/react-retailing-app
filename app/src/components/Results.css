@@ -1,0 +1,21 @@
+.results-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.category-results-container {
+   display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.results {
+  width: 1208px;
+  padding: 1rem;
+}
+
+
+.results h2 {
+  margin: 0;
+}

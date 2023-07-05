@@ -3,7 +3,7 @@ import { Home } from "./pages/Home";
 import { Item } from "./pages/Item";
 import { Category } from "./pages/Category";
 import "./App.css";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components/navbar/Navbar";
 import { SearchResults } from "./pages/SearchResults";
 
 function App() {

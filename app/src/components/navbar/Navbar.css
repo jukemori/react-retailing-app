@@ -10,8 +10,16 @@
 
 .navbar {
   height: 60px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: white;
+  border-bottom: 1px solid var(--secondary-text-color);
 }
+
+
 
 
 .menu-icon {
@@ -45,6 +53,57 @@
 }
 
 .nav-icons svg:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.nav-title.hidden, .nav-search, .nav-search-container  {
+  display: none;
+}
+
+.nav-search-container.visible{
+  display: flex;
+}
+
+.nav-search.visible, .nav-title {
+  display: block;
+  animation: appear .7s ease;
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.nav-search .fa-xmark {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+  border-radius: .5rem ;
+}
+
+.nav-search .fa-xmark:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+.return {
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+  transition: background-color 0.3s ease;
+  padding: .3rem;
+}
+
+.return:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.05);
 }

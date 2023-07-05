@@ -1,7 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useItems } from "../data/GetItems";
-import { Tabs } from "../components/Tabs";
-import { Cards } from "../components/Cards";
+import { ItemNavbar } from "../components/navbar/ItemNavbar";
+import { Cards } from "../components/cards/Cards";
+import "../components/Results.css";
 
 export function SearchResults() {
   const location = useLocation();
@@ -15,14 +16,23 @@ export function SearchResults() {
 
   return (
     <>
-      <Tabs />
+      <ItemNavbar />
       {filteredItems.length > 0 ? (
         <>
-          <h2>Search Results for: {keyword}</h2>
+          <div className="results-container">
+            <div className="results">
+              <h2>Search Results for: {keyword}</h2>
+            </div>
+          </div>
+
           <Cards items={filteredItems} />
         </>
       ) : (
-        <p>No items found from this search.</p>
+        <div className="results-container">
+          <div className="results">
+            <h2>No items found from {keyword}...</h2>
+          </div>
+        </div>
       )}
     </>
   );

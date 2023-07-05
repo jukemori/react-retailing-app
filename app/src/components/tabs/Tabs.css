@@ -2,7 +2,17 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--secondary-text-color);
+ }
+
+ .tabs {
+  margin-top: 60px;
   height: 40px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
  }
 
 ul {
