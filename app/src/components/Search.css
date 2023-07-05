@@ -7,10 +7,11 @@
 .search-input {
   height: 2rem;
   padding: 0 1rem;
-  width: 400px;
+  width: 30rem;
   background-color: #ededed;
   border: none;
   border-radius: .5rem;
+  box-sizing: border-box
 }
 
 
@@ -37,7 +38,7 @@ input:focus {
   position: absolute;
   z-index: 1;
   background-color: white;
-  width: 430px;
+  width: 30rem;
   border: 1px solid;
 }
 
