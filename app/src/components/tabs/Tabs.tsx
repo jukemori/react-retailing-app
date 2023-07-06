@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { useCategories } from "../../data/GetCategories";
+import { useCategories } from "../../data/Api";
 import "./Tabs.css";
 
 export function Tabs() {

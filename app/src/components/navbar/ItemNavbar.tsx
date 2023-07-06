@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useItemById } from "../../data/GetItems";
+import { useItemById } from "../../data/Api";
 import "./Navbar.css";
 import { Search } from "../search/Search";
 import { Left, Xmark, MagnifyingGlass, Download } from "../Icons";

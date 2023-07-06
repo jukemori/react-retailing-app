@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { useItems } from "../data/GetItems";
+import { useItems } from "../data/Api";
 import { ItemNavbar } from "../components/navbar/ItemNavbar";
 import { Cards } from "../components/cards/Cards";
 import "../components/Containers.css";

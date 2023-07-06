@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useItems } from "../../data/GetItems";
+import { useItems } from "../../data/Api";
 import { MagnifyingGlass } from "../Icons";
 import "./Search.css";
 

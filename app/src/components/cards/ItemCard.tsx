@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useItemById } from "../../data/GetItems";
+import { useItemById } from "../../data/Api";
 import { Heart, Message, Flag } from "../Icons";
 import "./ItemCard.css";
 

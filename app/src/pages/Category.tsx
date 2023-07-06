@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useItems } from "../data/GetItems";
+import { useItems } from "../data/Api";
 import { Cards } from "../components/cards/Cards";
 import "../components/Containers.css";
 
