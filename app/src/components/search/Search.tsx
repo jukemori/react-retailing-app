@@ -38,7 +38,11 @@ export function Search() {
           className="search-input"
           placeholder="検索"
         />
-        <div onClick={() => onSearch(value)} className="search-button">
+        <div
+          onClick={() => onSearch(value)}
+          className="search-button"
+          data-testid="search-button"
+        >
           <MagnifyingGlass />
         </div>
         {value &&
