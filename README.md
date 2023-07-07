@@ -2,10 +2,15 @@
 
 This repository contains the solution for the challenge of implementing a web application using React and TypeScript with the Vite build tool. The application includes an Item List page, Item Detail page, navbar with search functionality and category tabs for filtering items. All the pages are responsive and works for both phone and web screen size
 
-<img width="400" alt="" src="./image/web-item-list.png">
-<img width="100" alt="" src="./image/phone-item-list.png">
-<img width="400" alt="" src="./image/web-item-detail.png">
-<img width="100" alt="" src="./image/phone-item-detail.png">
+<div style="display: flex; align-items: center;">
+  <img width="600" alt="" src="./image/web-item-list.png">
+  <img width="150" alt="" src="./image/phone-item-list.png">
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img width="600" alt="" src="./image/web-item-detail.png">
+  <img width="150" alt="" src="./image/phone-item-detail.png">
+</div>
 
 ## Technologies Used
 - React
@@ -13,22 +18,46 @@ This repository contains the solution for the challenge of implementing a web ap
 - Vite
 - HTML/CSS
 
-## Setup and Usage
-1. Clone the repository from GitHub: `git clone git@github.com:m-rec/merpay-frontend-template_J264562980.git`
-2. Navigate to the project directory: `cd merpay-frontend-template_J264562980`
-3. Install the dependencies: `npm install` or `yarn install`
-4. Start the development server: `npm run dev` or `yarn dev`
-5. Access the application in your browser at `http://localhost:5173`
 
-### Production Build
+## Setup 
+
+``` shell
+$ git clone git@github.com:m-rec/merpay-frontend-template_J264562980.git
+$ cd merpay-frontend-template_J264562980/app
+$ npm install # or yarn install
+$ npm run dev # or yarn dev
+$ open http://localhost:5173
+```
+
+## Launch API Server
+
+``` shell
+$ cd api-server
+$ npm start
+$ open http://localhost:8000
+```
+
+## Production Build
 To build the application for production deployment, use the following command:
 
-```shell
+``` shell
 npm run build
 ```
 
 ## Architecture and Strategy
 The application follows a component-based architecture and utilizes React and TypeScript. The main components in the project are:
+
+``` shell
+- src/
+  - components/   # Contains reusable React components such as item cards, navbar, search bar, and menu tabs.
+  - data/         # Contains methods to fetch the API by different responses
+  - pages/        # Contains the item list, item detail pages, and also pages that are filtered by the search function and category menu tab. 
+  - App.tsx       # It sets up the routing using React Router, defining the routes for the item list page and item detail page.
+  - main.tsx      # entry point for the React application. It renders the App component and mounts it to the HTML template
+- index.html    # HTML template for the application
+- package.json    # Project configuration and dependencies
+
+```
 
 - `ItemListPage`
 - `ItemDetailPage`
