@@ -139,23 +139,23 @@ npm run lint
 
 To meet the requirements, the following implementation strategy is adopted:
 
-Set up the project: Initialize a new React TypeScript project with Vite setup.
+1. **Set up the project**: Initialize a new React TypeScript project with Vite setup.
 
-Create component structure: Define the component structure using React components with TypeScript typings.
+2. **Create component structure**: Define the component structure using React components with TypeScript typings.
 
-Fetch and display item data: Implement logic to fetch item data from the provided API and display them in components.
+3. **Fetch and display item data**: Implement logic to fetch item data from the provided API and display them in components.
 
-Implement search functionality: Add a search form to the item lists component and filter items based on user input.
+4. **Implement search functionality**: Enhance the item lists component with a search form to filter items based on user input.
 
-Implement category filtering: Add category tabs to the item lists component and filter items based on the selected category.
+5. **Implement category filtering**: Add category tabs to the item lists component and filter items based on the selected category.
 
-Implement item detail page: Create the ItemCard  component to display detailed information about a selected item.
+6. **Implement item detail page**: Create the ItemCard component to display detailed information about a selected item.
 
-Enable direct URL navigation: Implement routing to support direct navigation to every page via URL.
+7. **Enable direct URL navigation**: Implement routing to support direct navigation to every page via URL.
 
-Testing and Linting: Write tests to verify the functionality of critical components and use a linter for code quality.
+8. **Testing and Linting**: Write tests to verify the functionality of critical components and use a linter for code quality.
 
-Building for production: Prepare a production build command using the Vite build system for deployment.
+9. **Building for production**: Prepare a production build command using the Vite build system for deployment.
 
 By following this implementation strategy, the project fulfills the requirements using React with TypeScript and Vite setup, ensuring a production-ready application.
 
