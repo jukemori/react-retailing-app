@@ -1,6 +1,11 @@
-# Challenge README
+# Mockup Retail app
 
-This repository contains the solution for the challenge of implementing a web application using React and TypeScript with the Vite build tool. The application includes an Item List page, Item Detail page, and a responsive navbar with search functionality and category tabs for filtering items. The design follows the provided design specification, and the implementation utilizes React, TypeScript, and Vite.
+This repository contains the solution for the challenge of implementing a web application using React and TypeScript with the Vite build tool. The application includes an Item List page, Item Detail page, navbar with search functionality and category tabs for filtering items. All the pages are responsive and works for both phone and web screen size
+
+<img width="400" alt="" src="./image/web-item-list.png">
+<img width="100" alt="" src="./image/phone-item-list.png">
+<img width="400" alt="" src="./image/web-item-detail.png">
+<img width="100" alt="" src="./image/phone-item-detail.png">
 
 ## Technologies Used
 - React
@@ -9,11 +14,11 @@ This repository contains the solution for the challenge of implementing a web ap
 - HTML/CSS
 
 ## Setup and Usage
-1. Clone the repository from GitHub: `git clone <repository_url>`
-2. Navigate to the project directory: `cd <project_directory>`
+1. Clone the repository from GitHub: `git clone git@github.com:m-rec/merpay-frontend-template_J264562980.git`
+2. Navigate to the project directory: `cd merpay-frontend-template_J264562980`
 3. Install the dependencies: `npm install` or `yarn install`
 4. Start the development server: `npm run dev` or `yarn dev`
-5. Access the application in your browser at `http://localhost:3000`
+5. Access the application in your browser at `http://localhost:5173`
 
 ### Production Build
 To build the application for production deployment, use the following command:
