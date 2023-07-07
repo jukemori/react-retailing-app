@@ -1,6 +1,8 @@
 # Mockup Retail app
 
-This repository contains the solution for the challenge of implementing a web application using React and TypeScript with the Vite build tool. The application includes an Item List page, Item Detail page, navbar with search functionality and category tabs for filtering items. All the pages are responsive and works for both phone and web screen size
+## Overview
+
+This repository contains the solution for the challenge of implementing a web application using React and TypeScript with the Vite build tool. The application includes an item list page, an item detail page, navbar with search functionality, and category tabs for filtering items. All the pages are responsive and work for both phone and web screen size
 
 <div style="display: flex; align-items: center;">
   <img width="600" alt="" src="./image/web-item-list.png">
@@ -45,7 +47,7 @@ npm run build
 ```
 
 ## Architecture and Strategy
-The application follows a component-based architecture and utilizes React and TypeScript. The main components in the project are:
+The application follows a component-based architecture and utilizes React and TypeScript with a Vite setup. The main components of the project are:
 
 ``` shell
 - src/
@@ -81,7 +83,7 @@ The application follows a component-based architecture and utilizes React and Ty
 - Cards.tsx: Cards for item lists page. Grid is used and it is responsive for all devices.
 - ItemCard.tsx: Item card for item detail page.
 - Navbar.tsx: Responsive navbar for item lists page. menu icon appears for phone width with a toggle function.
-- ItemNavbar.tsx: Navbar for item detail page.  The item's name appears in the middle and also be able to make search bar appear by clicking the magnify glass icon.
+- ItemNavbar.tsx: Navbar for item detail page.  The item's name appears in the middle and also be able to make search bar appear by clicking the magnifying glass icon.
 - Search.tsx: Search bar for Navbar. It has a dropdown function that shows the suggestions of the search by fetching the API.
 - Tabs.tsx: Menu tabs for filtering the items by category_id.
 
@@ -92,9 +94,9 @@ The application follows a component-based architecture and utilizes React and Ty
 
 ### pages folder
 
-- Home.tsx: Home page "/" that shows all lists of items
+- Home.tsx: Home page "/" Displays the list of items fetched from the API and provides search and filtering functionality.
 - Category.tsx: Item list page that is filtered by category "/category/:id"
-- Item.tsx: Item detail page that shows the detail of one item when you click the item card from the lists page.
+- Item.tsx: Item page "/item/:id". Represents an individual item detail, displaying relevant information.
 - SearchResult.tsx: Result page that shows the results of your search from the navbar.
 
 ### Other files
@@ -134,6 +136,28 @@ npm run lint
 ```
 
 ## Conclusion
-The application successfully meets the minimum requirements specified in the challenge. It provides a responsive user interface with an Item List page, Item Detail page, and a navbar with search functionality and category tabs. The codebase is built with React, TypeScript, and Vite, and it is ready for production deployment.
+
+To meet the requirements, the following implementation strategy is adopted:
+
+Set up the project: Initialize a new React TypeScript project with Vite setup.
+
+Create component structure: Define the component structure using React components with TypeScript typings.
+
+Fetch and display item data: Implement logic to fetch item data from the provided API and display them in components.
+
+Implement search functionality: Add a search form to the item lists component and filter items based on user input.
+
+Implement category filtering: Add category tabs to the item lists component and filter items based on the selected category.
+
+Implement item detail page: Create the ItemCard  component to display detailed information about a selected item.
+
+Enable direct URL navigation: Implement routing to support direct navigation to every page via URL.
+
+Testing and Linting: Write tests to verify the functionality of critical components and use a linter for code quality.
+
+Building for production: Prepare a production build command using the Vite build system for deployment.
+
+By following this implementation strategy, the project fulfills the requirements using React with TypeScript and Vite setup, ensuring a production-ready application.
+
 
 
