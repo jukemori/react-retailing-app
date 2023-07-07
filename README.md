@@ -2,10 +2,15 @@
 
 This repository contains the solution for the challenge of implementing a web application using React and TypeScript with the Vite build tool. The application includes an Item List page, Item Detail page, navbar with search functionality and category tabs for filtering items. All the pages are responsive and works for both phone and web screen size
 
-<img width="400" alt="" src="./image/web-item-list.png">
-<img width="100" alt="" src="./image/phone-item-list.png">
-<img width="400" alt="" src="./image/web-item-detail.png">
-<img width="100" alt="" src="./image/phone-item-detail.png">
+<div style="display: flex; align-items: center;">
+  <img width="400" alt="" src="./image/web-item-list.png">
+  <img width="100" alt="" src="./image/phone-item-list.png">
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img width="400" alt="" src="./image/web-item-detail.png">
+  <img width="100" alt="" src="./image/phone-item-detail.png">
+</div>
 
 ## Technologies Used
 - React
