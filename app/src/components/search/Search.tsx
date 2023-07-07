@@ -5,22 +5,30 @@ import { MagnifyingGlass } from '../Icons'
 import './Search.css'
 
 export function Search (): React.ReactElement {
+  // Get the navigation function for programmatic navigation
   const navigate = useNavigate()
+
+  // Fetch the list of items
   const items = useItems()
+
+  // State variables for search functionality
   const [value, setValue] = useState('')
   const [searchPerformed, setSearchPerformed] = useState(false)
 
+  // Handle the input change event
   const onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     setValue(event.target.value)
     setSearchPerformed(false)
   }
 
+  // Perform a search with the specified search term
   const onSearch = (searchTerm: string): void => {
     setValue(searchTerm)
     setSearchPerformed(true)
     navigate(`/search?keyword=${searchTerm}`)
   }
 
+  // Handle the key press event (Enter key)
   const handleKeyPress = (
     event: React.KeyboardEvent<HTMLInputElement>
   ): void => {
@@ -31,7 +39,9 @@ export function Search (): React.ReactElement {
 
   return (
     <>
+      {/* Search container */}
       <div className="search-container">
+        {/* Input field for the search term */}
         <input
           type="text"
           value={value}
@@ -40,6 +50,8 @@ export function Search (): React.ReactElement {
           className="search-input"
           placeholder="検索"
         />
+
+        {/* Search button */}
         <div
           onClick={() => {
             onSearch(value)
@@ -49,8 +61,11 @@ export function Search (): React.ReactElement {
         >
           <MagnifyingGlass />
         </div>
+
+        {/* Search suggestions */}
         {value !== '' && !searchPerformed && (
           <div className="search-suggestions">
+            {/* Filter and map the items for search suggestions */}
             {items
               .filter((item) => {
                 const searchTerm = value.toLowerCase()
@@ -74,6 +89,8 @@ export function Search (): React.ReactElement {
                   {item.name}
                 </div>
               ))}
+
+            {/* Display the search term itself as a suggestion */}
             {value !== '' &&
               !items.some((item) =>
                 item.name.toLowerCase().startsWith(value.toLowerCase())

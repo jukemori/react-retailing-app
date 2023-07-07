@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './Cards.css'
 import { Heart, Camera } from '../Icons'
 
+// Define the shape of the 'Item' object
 interface Item {
   id: number
   image: string

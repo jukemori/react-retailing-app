@@ -4,10 +4,10 @@ import { Heart, Message, Flag } from '../Icons'
 import './ItemCard.css'
 
 export function ItemCard (): JSX.Element {
-  const { id } = useParams<{ id: string }>()
-  const item = useItemById(Number(id))
+  const { id } = useParams()
+  const item: any = useItemById(Number(id))
 
-  if (item === undefined) {
+  if (item === null || item === undefined) {
     return <div>Item not found...</div> // Handle the case when the item is not found or still loading
   }
 

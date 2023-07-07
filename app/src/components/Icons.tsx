@@ -15,6 +15,7 @@ import {
   faMessage
 } from '@fortawesome/free-regular-svg-icons'
 
+// importing icons from font awesome //
 export function MenuBars (): JSX.Element {
   return <FontAwesomeIcon icon={faBars} />
 }
