@@ -39,12 +39,7 @@ $ npm start
 $ open http://localhost:8000
 ```
 
-## Production Build
-To build the application for production deployment, use the following command:
 
-``` shell
-npm run build
-```
 
 ## Architecture and Strategy
 The application follows a component-based architecture and utilizes React and TypeScript with a Vite setup. The main components of the project are:
@@ -133,6 +128,13 @@ To run the code linting checks, use the following command:
 
 ``` shell
 npm run lint
+```
+
+## Production Build
+To build the application for production deployment, use the following command:
+
+``` shell
+npm run build
 ```
 
 ## Conclusion
