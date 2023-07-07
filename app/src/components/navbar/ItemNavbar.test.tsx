@@ -1,34 +1,25 @@
-// import { render, screen, fireEvent } from "@testing-library/react";
-// import { ItemNavbar } from "./ItemNavbar";
+import { render } from "@testing-library/react";
+import { MemoryRouter, Routes, Route } from "react-router-dom";
+import { useItemById } from "../../data/Api";
+import { ItemNavbar } from "./ItemNavbar";
 
-// describe("ItemNavbar", () => {
-//   test("should render the navbar with the correct title", () => {
-//     const item = {
-//       name: "My Item",
-//     };
-//     render(<ItemNavbar item={item} />);
-//     const titleElement = screen.getByText("My Item");
-//     expect(titleElement).toBeInTheDocument();
-//   });
+jest.mock("../../data/Api");
+jest.mock("./Navbar.css", () => ({}));
+jest.mock("../search/Search.css", () => ({}));
 
-//   test("should hide the title when the search bar is open", () => {
-//     render(<ItemNavbar />);
-//     const searchIcon = screen.getByTestId("search-icon");
-//     fireEvent.click(searchIcon);
-//     const titleElement = screen.getByTestId("nav-title");
-//     expect(titleElement).toHaveClass("hidden");
-//   });
+describe("ItemNavbar", () => {
+  test("renders item name when available", () => {
+    const itemName = "Test Item";
+    (useItemById as jest.Mock).mockReturnValue({ name: itemName });
 
-//   test("should show the title when the search bar is closed", () => {
-//     render(<ItemNavbar />);
-//     const searchIcon = screen.getByTestId("search-icon");
-//     fireEvent.click(searchIcon);
-//     fireEvent.click(searchIcon);
-//     const titleElement = screen.getByTestId("nav-title");
-//     expect(titleElement).not.toHaveClass("hidden");
-//   });
-// });
+    const { getByText } = render(
+      <MemoryRouter initialEntries={["/1"]}>
+        <Routes>
+          <Route path="/:id" element={<ItemNavbar />} />
+        </Routes>
+      </MemoryRouter>
+    );
 
-test("placeholder test", () => {
-  expect(true).toBe(true);
+    expect(getByText(itemName)).toBeInTheDocument();
+  });
 });

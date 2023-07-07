@@ -23,11 +23,18 @@ export function Navbar() {
       <>
         <nav className="navbar">
           <div className="nav-container">
-            <div className="menu-icon" onClick={handleShowNavbar}>
+            <div
+              className="menu-icon"
+              data-testid="menu-icon"
+              onClick={handleShowNavbar}
+            >
               <MenuBars />
             </div>
             <Search />
-            <div className={`nav-elements  ${showNavbar && "active"}`}>
+            <div
+              className={`nav-elements  ${showNavbar && "active"}`}
+              data-testid="nav-elements"
+            >
               <ul>
                 <li>
                   <NavLink to="/">Home</NavLink>

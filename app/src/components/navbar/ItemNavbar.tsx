@@ -14,10 +14,17 @@ export function ItemNavbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="return" onClick={() => navigate(-1)}>
+        <div
+          className="return"
+          data-testid="return-button"
+          onClick={() => navigate(-1)}
+        >
           <Left />
         </div>
-        <div className={`nav-search-container ${showSearch ? "visible" : ""}`}>
+        <div
+          className={`nav-search-container ${showSearch ? "visible" : ""}`}
+          data-testid="search-container"
+        >
           <div
             className={`nav-search ${showSearch ? "visible" : ""}`}
             onClick={() => {
@@ -38,6 +45,7 @@ export function ItemNavbar() {
         ) : null}
         <div className="nav-icons">
           <div
+            data-testid="magnifying-glass"
             onClick={() => {
               setShowTitle(!showTitle);
               setShowSearch(!showSearch);
