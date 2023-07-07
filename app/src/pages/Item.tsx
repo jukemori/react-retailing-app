@@ -1,11 +1,11 @@
-import { ItemNavbar } from "../components/navbar/ItemNavbar";
-import { ItemCard } from "../components/cards/ItemCard";
+import { ItemNavbar } from '../components/navbar/ItemNavbar'
+import { ItemCard } from '../components/cards/ItemCard'
 
-export function Item() {
+export function Item (): JSX.Element {
   return (
     <>
       <ItemNavbar />
       <ItemCard />
     </>
-  );
+  )
 }

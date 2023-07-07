@@ -1,68 +1,74 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { act } from "react-dom/test-utils";
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+import { act } from 'react-dom/test-utils'
 
-const base_url = "http://localhost:8000";
+const BASE_URL = 'http://localhost:8000'
 
-export function useItems() {
-  const [items, setItems] = useState<any[]>([]);
+export function useItems (): any[] {
+  const [items, setItems] = useState<any[]>([])
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async (): Promise<void> => {
       try {
-        const response = await axios.get(`${base_url}/items`);
+        const response = await axios.get(`${BASE_URL}/items`)
         act(() => {
-          setItems(response.data.data);
-        });
+          setItems(response.data.data)
+        })
       } catch (error) {
-        console.log(error);
+        console.log(error)
       }
-    };
+    }
 
-    fetchData();
-  }, []);
+    fetchData().catch((error) => {
+      console.log(error)
+    })
+  }, [])
 
-  return items;
+  return items
 }
 
-export function useItemById(id: number) {
-  const [item, setItem] = useState(null);
+export function useItemById (id: number): any {
+  const [item, setItem] = useState<any>(null)
 
   useEffect(() => {
-    const fetchItem = async () => {
+    const fetchItem = async (): Promise<void> => {
       try {
-        const response = await axios.get(`${base_url}/items/${id}`);
+        const response = await axios.get(`${BASE_URL}/items/${id}`)
         act(() => {
-          setItem(response.data);
-        });
+          setItem(response.data)
+        })
       } catch (error) {
-        console.log(error);
+        console.log(error)
       }
-    };
+    }
 
-    fetchItem();
-  }, [id]);
+    fetchItem().catch((error) => {
+      console.log(error)
+    })
+  }, [id])
 
-  return item;
+  return item
 }
 
-export function useCategories() {
-  const [categories, setCategories] = useState<any[]>([]);
+export function useCategories (): any[] {
+  const [categories, setCategories] = useState<any[]>([])
 
   useEffect(() => {
-    const fetchCategories = async () => {
+    const fetchCategories = async (): Promise<void> => {
       try {
-        const response = await axios.get(`${base_url}/categories`);
+        const response = await axios.get(`${BASE_URL}/categories`)
         act(() => {
-          setCategories(response.data.data);
-        });
+          setCategories(response.data.data)
+        })
       } catch (error) {
-        console.log(error);
+        console.log(error)
       }
-    };
+    }
 
-    fetchCategories();
-  }, []);
+    fetchCategories().catch((error) => {
+      console.log(error)
+    })
+  }, [])
 
-  return categories;
+  return categories
 }

@@ -1,14 +1,14 @@
-import { useParams } from "react-router-dom";
-import { useItemById } from "../../data/Api";
-import { Heart, Message, Flag } from "../Icons";
-import "./ItemCard.css";
+import { useParams } from 'react-router-dom'
+import { useItemById } from '../../data/Api'
+import { Heart, Message, Flag } from '../Icons'
+import './ItemCard.css'
 
-export function ItemCard() {
-  const { id } = useParams();
-  const item: any = useItemById(Number(id));
+export function ItemCard (): JSX.Element {
+  const { id } = useParams<{ id: string }>()
+  const item = useItemById(Number(id))
 
-  if (!item) {
-    return <div>Item not found...</div>; // Handle the case when the item is not found or still loading
+  if (item === undefined) {
+    return <div>Item not found...</div> // Handle the case when the item is not found or still loading
   }
 
   return (
@@ -45,7 +45,7 @@ export function ItemCard() {
             </div>
             <div className="purchase-box">
               <div className="item-price">
-                <h2>¥{item.price.toLocaleString("en-US")}</h2>
+                <h2>¥{item.price.toLocaleString('en-US')}</h2>
                 <p>{item.shipping_fee}</p>
               </div>
               <h3>購入手続きへ</h3>
@@ -54,5 +54,5 @@ export function ItemCard() {
         </div>
       </div>
     </>
-  );
+  )
 }

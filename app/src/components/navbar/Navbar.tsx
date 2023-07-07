@@ -1,23 +1,24 @@
-import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import "./Navbar.css";
-import { Search } from "../search/Search";
-import { MenuBars, Bell, Check } from "../Icons";
-import { Tabs } from "../tabs/Tabs";
+import { useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
+import './Navbar.css'
+import { Search } from '../search/Search'
+import { MenuBars, Bell, Check } from '../Icons'
+import { Tabs } from '../tabs/Tabs'
 
-export function Navbar() {
-  const location = useLocation();
-  const [showNavbar, setShowNavbar] = useState(false);
-  const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar);
-  };
+export function Navbar (): JSX.Element {
+  const location = useLocation()
+  const [showNavbar, setShowNavbar] = useState(false)
 
-  const renderNavContent = () => {
+  const handleShowNavbar = (): void => {
+    setShowNavbar(!showNavbar)
+  }
+
+  const renderNavContent = (): JSX.Element | null => {
     if (
-      location.pathname.includes("/item/") ||
-      location.pathname.includes("/search")
+      location.pathname.includes('/item/') ||
+      location.pathname.includes('/search')
     ) {
-      return <></>;
+      return null
     }
     return (
       <>
@@ -32,7 +33,7 @@ export function Navbar() {
             </div>
             <Search />
             <div
-              className={`nav-elements  ${showNavbar && "active"}`}
+              className={`nav-elements ${showNavbar ? 'active' : ''}`}
               data-testid="nav-elements"
             >
               <ul>
@@ -55,8 +56,8 @@ export function Navbar() {
         </nav>
         <Tabs />
       </>
-    );
-  };
+    )
+  }
 
-  return <>{renderNavContent()}</>;
+  return <>{renderNavContent()}</>
 }

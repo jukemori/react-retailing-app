@@ -1,12 +1,12 @@
-import { Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { Item } from "./pages/Item";
-import { Category } from "./pages/Category";
-import "./App.css";
-import { Navbar } from "./components/navbar/Navbar";
-import { SearchResults } from "./pages/SearchResults";
+import { Routes, Route } from 'react-router-dom'
+import { Home } from './pages/Home'
+import { Item } from './pages/Item'
+import { Category } from './pages/Category'
+import './App.css'
+import { Navbar } from './components/navbar/Navbar'
+import { SearchResults } from './pages/SearchResults'
 
-function App() {
+function App (): JSX.Element {
   return (
     <>
       <Navbar />
@@ -17,7 +17,7 @@ function App() {
         <Route path="/item/:id" element={<Item />} />
       </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

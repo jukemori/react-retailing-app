@@ -24,10 +24,20 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    react: {
+      version: "detect", // or specify a specific version, e.g., "16.14.0"
+    },
+  },
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    project: "./tsconfig.json",
   },
   plugins: ["react", "jest", "jest-dom", "testing-library"],
-  rules: {},
+  rules: {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "off",
+  },
 };

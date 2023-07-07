@@ -1,47 +1,60 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faBell } from "@fortawesome/free-regular-svg-icons";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { faMessage } from "@fortawesome/free-regular-svg-icons";
-import { faFlag } from "@fortawesome/free-solid-svg-icons";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faBars,
+  faCheck,
+  faFlag,
+  faChevronLeft,
+  faMagnifyingGlass,
+  faArrowUpFromBracket,
+  faCamera,
+  faXmark
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faBell,
+  faHeart,
+  faMessage
+} from '@fortawesome/free-regular-svg-icons'
 
-export function MenuBars() {
-  return <FontAwesomeIcon icon={faBars} />;
-}
-export function Bell() {
-  return <FontAwesomeIcon icon={faBell} />;
-}
-export function Check() {
-  return <FontAwesomeIcon icon={faCheck} />;
-}
-export function Heart() {
-  return <FontAwesomeIcon icon={faHeart} />;
-}
-export function Message() {
-  return <FontAwesomeIcon icon={faMessage} />;
-}
-export function Flag() {
-  return <FontAwesomeIcon icon={faFlag} />;
-}
-export function Left() {
-  return <FontAwesomeIcon icon={faChevronLeft} />;
-}
-export function MagnifyingGlass() {
-  return <FontAwesomeIcon icon={faMagnifyingGlass} />;
-}
-export function Download() {
-  return <FontAwesomeIcon icon={faArrowUpFromBracket} />;
+export function MenuBars (): JSX.Element {
+  return <FontAwesomeIcon icon={faBars} />
 }
 
-export function Camera() {
-  return <FontAwesomeIcon icon={faCamera} />;
+export function Bell (): JSX.Element {
+  return <FontAwesomeIcon icon={faBell} />
 }
-export function Xmark() {
-  return <FontAwesomeIcon icon={faXmark} />;
+
+export function Check (): JSX.Element {
+  return <FontAwesomeIcon icon={faCheck} />
+}
+
+export function Heart (): JSX.Element {
+  return <FontAwesomeIcon icon={faHeart} />
+}
+
+export function Message (): JSX.Element {
+  return <FontAwesomeIcon icon={faMessage} />
+}
+
+export function Flag (): JSX.Element {
+  return <FontAwesomeIcon icon={faFlag} />
+}
+
+export function Left (): JSX.Element {
+  return <FontAwesomeIcon icon={faChevronLeft} />
+}
+
+export function MagnifyingGlass (): JSX.Element {
+  return <FontAwesomeIcon icon={faMagnifyingGlass} />
+}
+
+export function Download (): JSX.Element {
+  return <FontAwesomeIcon icon={faArrowUpFromBracket} />
+}
+
+export function Camera (): JSX.Element {
+  return <FontAwesomeIcon icon={faCamera} />
+}
+
+export function Xmark (): JSX.Element {
+  return <FontAwesomeIcon icon={faXmark} />
 }
