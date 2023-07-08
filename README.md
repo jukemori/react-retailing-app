@@ -1,4 +1,4 @@
-# Mockup Retail app
+# Mockup retail app
 
 ## Overview
 
