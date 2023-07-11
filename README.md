@@ -24,8 +24,8 @@ This repository contains the solution for the challenge of implementing a web ap
 ## Setup 
 
 ``` shell
-$ git clone git@github.com:m-rec/merpay-frontend-template_J264562980.git
-$ cd merpay-frontend-template_J264562980/app
+$ git clone git@github.com:jukemori/react-retailing-app.git
+$ cd react-retailing-app/app
 $ npm install # or yarn install
 $ npm run dev # or yarn dev
 $ open http://localhost:5173
@@ -139,7 +139,7 @@ npm run build
 
 ## Conclusion
 
-To meet the requirements, the following implementation strategy is adopted:
+The following implementation strategy is adopted:
 
 1. **Set up the project**: Initialize a new React TypeScript project with Vite setup.
 
